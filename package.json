@@ -1,0 +1,24 @@
+{
+  "name": "obj2gltf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pkg-win": "pkg . --targets node16-win-x64 --output ./build/obj2gltf.exe",
+    "pkg-linux": "pkg . --targets node16-linux-x64 --output ./build/obj2gltf",
+    "convert": "node ./index.js --folder-name=airboat --file-name=airboat --ext-name=obj --output-path=./test.gltf"
+  },
+  "bin": {
+    "app": "./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "obj2gltf": "^3.1.6",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
+}
