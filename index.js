@@ -34,10 +34,8 @@ async function main() {
   console.log(filePath)
   console.log(outputPath)
 
-  const originalFilePath = path.join(process.cwd(), filePath)
-
   try {
-    await convertObj2Gltf(originalFilePath, outputPath)
+    await convertObj2Gltf(filePath, outputPath)
   } catch (err) {
     console.error(err)
   }
